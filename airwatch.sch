@@ -4373,12 +4373,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="linear">
+<library name="linear" urn="urn:adsk.eagle:library:262">
 <description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SOT223">
+<package name="SOT223" urn="urn:adsk.eagle:footprint:16157/1" library_version="2">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
@@ -4403,7 +4403,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
-<package name="SOT23">
+<package name="SOT23" urn="urn:adsk.eagle:footprint:16354/1" library_version="2">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
 reflow soldering</description>
 <wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
@@ -4429,8 +4429,23 @@ reflow soldering</description>
 <rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SOT223" urn="urn:adsk.eagle:package:16418/2" type="model" library_version="2">
+<description>Small Outline Transistor</description>
+<packageinstances>
+<packageinstance name="SOT223"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23" urn="urn:adsk.eagle:package:16489/2" type="model" library_version="2">
+<description>SMALL OUTLINE TRANSISTOR
+reflow soldering</description>
+<packageinstances>
+<packageinstance name="SOT23"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="78XX">
+<symbol name="78XX" urn="urn:adsk.eagle:symbol:16149/1" library_version="2">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
@@ -4444,7 +4459,7 @@ reflow soldering</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP1703" prefix="IC">
+<deviceset name="MCP1703" urn="urn:adsk.eagle:component:16824/3" prefix="IC" library_version="2">
 <description>&lt;b&gt;250 mA, 16V, Low Quiescent Current LDO Regulator&lt;/b&gt;&lt;p&gt;
 Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <gates>
@@ -4457,6 +4472,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <connect gate="G$1" pin="VI" pad="1"/>
 <connect gate="G$1" pin="VO" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16418/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4467,6 +4485,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <connect gate="G$1" pin="VI" pad="3"/>
 <connect gate="G$1" pin="VO" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16489/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4810,12 +4831,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.0508" layer="39"/>
-<wire x1="1.5" y1="0.8" x2="2.159" y2="0" width="0.0508" layer="39"/>
-<wire x1="2.159" y1="0" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
-<wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
-<wire x1="-1.5" y1="-0.8" x2="-2.159" y2="0" width="0.0508" layer="39"/>
-<wire x1="-2.159" y1="0" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
+<wire x1="-1.5" y1="0.8635" x2="1.5" y2="0.8635" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="0.8635" x2="2.159" y2="0" width="0.0508" layer="39"/>
+<wire x1="2.159" y1="0" x2="1.5635" y2="-0.8635" width="0.0508" layer="39"/>
+<wire x1="1.5635" y1="-0.8635" x2="-1.4365" y2="-0.8635" width="0.0508" layer="39"/>
+<wire x1="-1.4365" y1="-0.8635" x2="-2.159" y2="0" width="0.0508" layer="39"/>
+<wire x1="-2.159" y1="0" x2="-1.5" y2="0.8635" width="0.0508" layer="39"/>
 <polygon width="0.3048" layer="1">
 <vertex x="-1.27" y="0.635"/>
 <vertex x="-1.778" y="0"/>
@@ -4829,6 +4850,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.27" y="0.635"/>
 <vertex x="0.508" y="0.635"/>
 <vertex x="0.508" y="-0.635"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4445" y="0.635"/>
+<vertex x="-1.3335" y="0.635"/>
+<vertex x="-1.778" y="0"/>
+<vertex x="-1.3335" y="-0.635"/>
+<vertex x="-0.4445" y="-0.635"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.508" y="0.635"/>
+<vertex x="1.3335" y="0.635"/>
+<vertex x="1.778" y="0"/>
+<vertex x="1.397" y="-0.635"/>
+<vertex x="0.4445" y="-0.635"/>
 </polygon>
 </package>
 <package name="1206-EZ">
@@ -6148,7 +6183,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF" device="-0805-10V-10%" value="10uF"/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="IC1" library="linear" deviceset="MCP1703" device="DB" value="MCP1825 (3.3 or 3v)"/>
+<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="MCP1703" device="DB" package3d_urn="urn:adsk.eagle:package:16418/2" value="MCP1825 (3.3 or 3v)"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="10UF" device="-0805-10V-10%" value="10uF"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="F1" library="SparkFun-Fuses" deviceset="PPTC" device="_THREE-QUARTER-AMP" value="6V/0.75A"/>
@@ -6167,9 +6202,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="smd_passives_easy" deviceset="RESISTOR" device="0805" value=" "/>
 <part name="R4" library="smd_passives_easy" deviceset="RESISTOR" device="0805" value=" "/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_04" device="JST-PTH-VERT"/>
-<part name="R5" library="smd_passives_easy" deviceset="RESISTOR" device="0805" value="220-2.2k"/>
+<part name="R5" library="smd_passives_easy" deviceset="RESISTOR" device="0805" value=" "/>
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_04" device="JST-PTH-VERT"/>
-<part name="R6" library="smd_passives_easy" deviceset="RESISTOR" device="0805" value="470R-10k"/>
+<part name="R6" library="smd_passives_easy" deviceset="RESISTOR" device="0805" value=" "/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R7" library="smd_passives_easy" deviceset="RESISTOR" device="0805" value=" "/>
@@ -6878,6 +6913,21 @@ There </text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

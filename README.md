@@ -6,9 +6,11 @@ Mostly just gettingthis under VC.
 
 ## Features/Hacks used
 
+* Somethinng is wrong with the 0805 footprints. The
 * There's a ton of voltage  drop on the way to the battery. 
 * It might only charge to 50% from 5v. Good enough, they don't like full charge anyway.
 * WiFi Is Fussy! Or maybe it isn't? I'm testing with unfinished code.
+* Totally untested fancy easy to solder bigger 0805 pads!
 
 * You can't use the TX pin, it controls the battery charger
 * Ok, maybe the world won't end if you send some stuff anyway?
